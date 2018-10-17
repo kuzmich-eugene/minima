@@ -1,0 +1,191 @@
+main{
+	h2 {
+		font-size: 30px;
+		text-transform: uppercase;
+	}
+}
+
+.future-list {
+	padding: 100px 0;
+	border-bottom: 1px solid #e7e7e7;
+	justify-content: space-between;
+
+	@media (max-width: 991px) {
+		padding: 50px 0;
+	}
+
+	@media (max-width: 767px) {
+		padding: 30px 0;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	li {
+		width: 340px;
+		text-align: center;
+
+		h3 {
+			font-size: 22px;
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 95px;
+
+			@media (max-width: 991px) {
+				font-size: 18px;
+				line-height: 70px;
+			}
+
+			@media (max-width: 767px) {
+				font-size: 16px;
+				line-height: 50px;
+			}
+		}
+
+		p {
+			font-size: 14px;
+
+			@media (max-width: 1199px) {
+				padding: 0 10px;
+			}
+
+			@media (max-width: 991px) {
+				padding: 0 10px;
+				font-size: 10px;
+			}
+
+			@media (max-width: 767px) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+
+.main-video {
+	max-width: 685px;
+	padding: 80px 0 85px;
+	margin: 0 auto;
+	text-align: center;
+
+	@media (max-width: 991px) {
+		padding: 50px 0;
+	}
+
+	h2 {
+		margin-bottom: 25px;
+
+		@media (max-width: 991px) {
+			font-size: 25px;
+		}
+
+		@media (max-width: 767px) {
+			font-size: 20px;
+		}
+	}
+
+	p {
+		padding: 0 85px;
+		font-size: 16px;
+
+		@media (max-width: 991px) {
+			font-size: 13px;
+		}
+
+		@media (max-width: 767px) {
+			padding: 0 30px;
+			font-size: 10px;
+		}
+	}
+
+	video {
+		width: 90%;
+		margin-top: 80px;
+
+		@media (max-width: 991px) {
+			margin-top: 40px;
+		}
+
+		@media (max-width: 767px) {
+			padding: 0 5px;
+		}
+	}
+}
+
+.brand {
+	text-align: center;
+
+	h2 {
+		margin-bottom: 85px;
+	}
+
+	.brand-list {
+		padding-bottom: 100px;
+		justify-content: space-between;
+
+		@media (max-width: 991px) {
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin: 0;
+			padding-bottom: 70px;
+		}
+
+		@media (max-width: 767px) {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		li {
+			position: relative;
+			width: 260px;
+
+			@media (max-width: 1199px) {
+				margin-right: 10px;
+
+			@media (max-width: 767px) {
+				margin-right: 0;
+			}	
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
+			@media (max-width: 991px) {
+				margin-bottom: 10px;
+			}
+
+			img {
+				width: 100%;
+				transition: opacity .2s ease;
+			}
+
+			button {
+				opacity: 0;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				min-width: 100%;
+				font-size: 16px;
+				line-height: 45px;
+				text-transform: capitalize;
+				border-radius: 0;
+				
+				transition: opacity .2s ease;
+				img {
+					width: 15px;
+				}
+
+			}
+
+			&:hover {
+				img {
+					opacity: .5;
+				}				
+
+				button {
+					opacity: 1;
+					background-color: #575757;
+				}
+			}
+		}
+	}
+}
